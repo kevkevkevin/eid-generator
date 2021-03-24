@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF8">
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato|Petit Formal Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/skeleton.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/card.css">
+
+	</head>
+	<body>
+
+
+		<div id="card-container" class="row">
+			<div class="column text-container">
+				
+				<!-- <p id="card-msg">Lorum Ipsum and a Happy New Year! We would like to thank our entire community for their support this year. We enjoyed all the challenged and achievements 2017 brought our way and we’re looking forward to what 2018 will bring.<br><br>May your holidays be filled with code and cocoa!</p>
+				<h3 id="card-from">Love Lighthouse Labs</h3> -->
+		
+				<img src="./img/adha.jpg" id="card-image">
+                <div  id="card-title" style="text-align: right;">
+                    mamamiya
+                </div>
+				<!-- <div id="snow"></div> -->
+			</div>
+		</div>
+        
+		<div class="row form-container">
+			<div class="column">
+				<form style="display: flex;
+                align-items: baseline;
+                justify-content: center;">
+					<!-- <label for="title">obladi oblada:</label> -->
+					<input type="text" id="title" name="title" placeholder="Put your name here" style="width: 50%;">
+					<!-- <label for="from">From:</label> -->
+					<!-- <input type="email" id="email" name="email" placeholder="email po, dito po"> -->
+					<label for="image" style="display: none;">Background Image:</label>
+					<select id="image" style="display: none;">
+						<option value="./img/adha.jpg">Human Family</option>
+						<option value="./img/our-family.jpg">Dog Family</option>
+					</select>
+                    <button id="save-button">Save Card</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
