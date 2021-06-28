@@ -1,20 +1,25 @@
+@font-face { 
+  font-family: 'mainFont'; 
+  src: url('../fonts/Frutiger_ar.ttf'); 
+} 
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'mainFont', sans-serif;
   font-size: 16px;
-  background-color: #EFECE8;
+  
 }
 
 h1 {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'mainFont', sans-serif;
   color: darkred;
   font-size: 4rem;
   text-align: center;
 }
 
 h2, h3 {
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'mainFont', sans-serif;
 }
 h2 {
   text-align: center;
@@ -28,9 +33,39 @@ p {
   padding-left: 1rem;
 }
 
+.logo img {
+  width: 230px !important;
+    height: 78px;
+    float: none;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    z-index: 1;
+}
+
+.element img {
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 330px;
+    height: 220px;
+    z-index: 1;
+}
+
+.info_ p {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cardContainer {
+  position: fixed;
+  top: 18%;
+}
+
 #card-container {
   margin: auto;
-  width: 35%;
+  width: 50%;
   max-width: 100%;
   max-height: 100%;
    
@@ -38,16 +73,23 @@ p {
 
 #card-title {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%, 0);
-  font-family: 'Tajawal', sans-serif;
-  color: #fff;
-  font-size: 1.5rem;
+  font-family: 'mainFont', sans-serif;
+  font-weight: 700;
+  color: #0074c9;
+  font-size: 4rem;
+}
+
+input#title {
+  border-radius: 0 !important;
 }
 
 .form-container {
-  margin: 2rem 7%;
+  margin: 0rem 8%;
+  position: relative;
+  top: -25px;
 
 }
 
@@ -67,14 +109,14 @@ input:focus, textarea:focus, select:focus {
 
 
 button:hover {
-  background-color: darkred;
+  background-color: #07A7E3;
   color: white;
   border: white;
 }
 
 
 .text-container {
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 0 1rem 2rem 1rem;
   max-height: 100%;
   overflow: hidden;
   /* word-wrap: break-word; */
@@ -92,6 +134,13 @@ img {
   margin: 0;
   float: right;
   object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  #card-title {
+    bottom: 14%;
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -113,5 +162,15 @@ img {
 @media (max-width: 768px) {
   #card-container {
     width: 100%;
+  }
+
+  #card-title {
+    bottom: 18%;
+    font-size: 1.5rem;
+  }
+
+  .element img {
+    width: 200px;
+    height: 134px;
   }
 }
