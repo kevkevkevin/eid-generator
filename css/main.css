@@ -52,11 +52,16 @@ p {
     z-index: 1;
 }
 
+.info_ {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .info_ p {
   font-size: 13px !important;
   text-align: center !important;
   color: #a9a9a9;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .cardContainer {
@@ -141,6 +146,11 @@ img {
   #card-title {
     bottom: 14%;
     font-size: 2rem;
+  }
+  
+  .info_ {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
