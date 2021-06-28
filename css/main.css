@@ -53,7 +53,8 @@ p {
 }
 
 .info_ p {
-  font-size: 14px;
+  font-size: 13px;
+  text-align: center;
   color: #a9a9a9;
   margin-bottom: 1rem;
 }
