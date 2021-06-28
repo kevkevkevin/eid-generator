@@ -35,26 +35,26 @@ p {
 
 .logo img {
   width: 230px !important;
-    height: 78px;
-    float: none;
-    position: absolute;
-    top: 35px;
-    left: 35px;
-    z-index: 1;
+  height: 78px;
+  float: none;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  z-index: 1;
 }
 
 .element img {
   position: absolute;
     right: 0;
     bottom: 0;
-    width: 225px;
-    height: 150px;
+    width: 180px;
+    height: 118px;
     z-index: 1;
 }
 
 .info_ p {
   font-size: 14px;
-  text-align: center;
+  color: #a9a9a9;
   margin-bottom: 1rem;
 }
 
