@@ -41,8 +41,8 @@ saveButton.addEventListener('click', function(event) {
   event.preventDefault();
   html2canvas(cardContainer, {
     onrendered: function(canvas) {
-      var myImage = canvas.toDataURL("image/jpeg,1.0");
-      downloadURI("data:" + myImage, "Happy EID.jpg.png");
+      var myImage = canvas.toDataURL("image/jpeg,3.0");
+      downloadURI("data:" + myImage, "Happy EID.png");
     }
   });
 });
