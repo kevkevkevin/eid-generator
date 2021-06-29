@@ -82,7 +82,7 @@ p {
 
 #card-container {
   margin: auto;
-  width: 50%;
+  width: 100%;
   max-width: 100%;
   max-height: 100%;
 }
@@ -133,7 +133,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .text-container {
-  padding: 0 1rem 2rem 1rem;
+  /* padding: 0 1rem 2rem 1rem; */
+  padding: 0;
   max-height: 100%;
   overflow: hidden;
   /* word-wrap: break-word; */
