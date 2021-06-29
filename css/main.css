@@ -253,6 +253,15 @@ img {
   .info_ p:nth-child(2) {
     margin-top: 5px;
   }
+
+  .logo img {
+    width: 141px ​!important;
+    height: 46px;
+  }
+
+  .logo {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) and (max-height: 900px) {
