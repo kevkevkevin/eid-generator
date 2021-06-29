@@ -139,6 +139,7 @@ input:focus, textarea:focus, select:focus {
   overflow: hidden;
   /* word-wrap: break-word; */
   position: relative;
+  text-align: center;
 }
 
 #card-from {
@@ -148,8 +149,8 @@ input:focus, textarea:focus, select:focus {
 
 img {
   margin: 0;
-  float: right;
-  object-fit: cover;
+  /* float: right;
+  object-fit: cover; */
 }
 
 #save-button {
