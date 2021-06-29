@@ -1,16 +1,21 @@
 var cardContainer = document.getElementById('card-container');
 var cardImage = document.getElementById('card-image');
 var cardTitle = document.getElementById('card-title');
+var cardMessage = document.getElementById('card-message');
 
 var formTitle = document.getElementById('title');
+var formMessage = document.getElementById('message');
 var formImage = document.getElementById('image');
 
 var saveButton = document.getElementById('save-button');
 
 
-
 formTitle.addEventListener('keyup', function(event) {
   cardTitle.innerText = event.target.value;
+})
+
+formMessage.addEventListener('keyup', function(event) {
+  cardMessage.innerText = event.target.value;
 })
 
 /* formFrom.addEventListener('keyup', function(event) {
@@ -21,9 +26,9 @@ formMsg.addEventListener('keyup', function(event) {
   cardMsg.innerText = event.target.value;
 }) */
 
-formImage.addEventListener('change', function(event) {
-  cardImage.src = event.target.value;
-})
+if(formImage){
+  formImage.addEventListener('click', swapper, false);
+}
 
 function downloadURI(uri, name) {
   var link = document.createElement("a");

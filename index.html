@@ -12,69 +12,79 @@
 		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 		<link href="https://fonts.googleapis.com/css?family=Lato|Petit Formal Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/skeleton.css">
+		<!-- <link rel="stylesheet" href="css/skeleton.css"> -->
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/card.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		
 
 	</head>
 	<body>
-		<div class="logo">
-			<img src="./img/riyadh-airport-logo-b.png"/>
-		</div>
-		<main style=" 
-		    position: fixed;
-    background: url(../img/mainBG.jpg);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-		">
-			
-			
-			<div class="cardContainer">
-				
-				<div class="info_ animate__animated animate__fadeInUp">
-					<p>Directions: Enter your name in the text bar then click “save card” button to save your customized Eid Al Adha Greeting to your local device.  </p>
-				</div>
-
-				<div id="card-container" class="row">
-					<div class=" text-container">
-						<!-- <p id="card-msg">Lorum Ipsum and a Happy New Year! We would like to thank our entire community for their support this year. We enjoyed all the challenged and achievements 2017 brought our way and we’re looking forward to what 2018 will bring.<br><br>May your holidays be filled with code and cocoa!</p>
-						<h3 id="card-from">Love Lighthouse Labs</h3> -->
-				
-						<img src="./img/eidaladha.jpg" id="card-image">
-						<div  id="card-title" style="text-align: right;">
-							Mohammed
-						</div>
-						<!-- <div id="snow"></div> -->
-					</div>
-				</div>
-				
-				<div class="row form-container animate__animated animate__fadeInUp animate__delay-1s">
-					<div class="column">
-						<form style="display: flex;
-						align-items: baseline;
-						justify-content: center;">
-							<!-- <label for="title">obladi oblada:</label> -->
-							<input type="text" id="title" name="title" placeholder="Place Name Here" style="width: 50%;">
-							<!-- <label for="from">From:</label> -->
-							<!-- <input type="email" id="email" name="email" placeholder="email po, dito po"> -->
-							<label for="image" style="display: none;">Background Image:</label>
-							<select id="image" style="display: none;">
-								<option value="./img/adha.jpg">Human Family</option>
-								<option value="./img/our-family.jpg">Dog Family</option>
-							</select>
-							<button id="save-button">Save Card</button>
-						</form>
-					</div>
+		<div style="padding: 30px 30px 0;">
+			<div class="row">
+				<div class="col logo">
+					<img src="./img/riyadh-airport-logo-b.png"/>
 				</div>
 			</div>
-		</main>
-		<div class="element">
-			<img src="./img/element.png"/>
 		</div>
+		<main>
+			
+			<div class="container">
+				<div class="row">
+					<div class="cardContainer">
+						<div class="col">
+							<div class="info_ animate__animated animate__fadeInUp">
+								<!-- <div><a href="">EN</a></div> -->
+								<p style="margin-bottom: 5px">توجه: ادخل اسمك ورسالتك في الخانات بالأسفل، ثم اضغط على (حفظ) وستجد بطاقة التهنئة للعيد برسالتك موقعة بإسمك في جهازك. </p>
+								<p>Directions: Enter your name and your greeting word in the text bars then click “Save Card” button to save your customized Eid Al Adha Greeting to your local device. </p>
+								
+							</div>
+		
+							<div id="card-container" class="row">
+								<div class=" text-container">
+									<!-- <p id="card-msg">Lorum Ipsum and a Happy New Year! We would like to thank our entire community for their support this year. We enjoyed all the challenged and achievements 2017 brought our way and we’re looking forward to what 2018 will bring.<br><br>May your holidays be filled with code and cocoa!</p>
+									<h3 id="card-from">Love Lighthouse Labs</h3> -->
+							
+									<img src="./img/adha.jpg" id="card-image">
+									<div  id="card-title" style="text-align: right;">
+										Name Surname
+									</div>
+									<div  id="card-message" style="text-align: right;">
+										Short meaningful message
+									</div>
+									<!-- <div id="snow"></div> -->
+								</div>
+							</div>
+						</div>
+						<div class="col formColumn">
+							<div class="row form-container animate__animated animate__fadeInUp animate__delay-1s">
+								<div class="column">
+									<form class="form__">
+										<!-- <label for="title">obladi oblada:</label> -->
+										<input type="text" id="title" name="title" placeholder="Place Name Here" style="margin-bottom: 5px; border: 1px solid #a9a9a9;">
+										<input type="text" id="message" name="message" placeholder="Add Message Here" style="margin-bottom: 10px; border: 1px solid #a9a9a9;">
+										<!-- <label for="from">From:</label> -->
+										<!-- <input type="email" id="email" name="email" placeholder="Add Message Here"> -->
+										<!-- <label for="image" style="display: none;">Background Image:</label>
+										<select id="image" style="display: none;">
+											<option value="./img/adha.jpg">Human Family</option>
+											<option value="./img/our-family.jpg">Dog Family</option>
+										</select> -->
+										<button id="save-button">Save Card</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</main>
+		<!-- <div class="row">
+			<div class="col element">
+				<img src="./img/element.png"/>
+			</div>
+		</div> -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 		<script src="js/main.js"></script>
 	</body>

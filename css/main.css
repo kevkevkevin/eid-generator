@@ -6,9 +6,28 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'mainFont', sans-serif;
+  font-family: 'mainFont', sans-serif !important;
   font-size: 16px;
-  
+  box-sizing: content-box;
+  overflow: hidden;
+  background:url("../img/mainBG.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+body::after {
+  content: "";
+    background: url(../img/element.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 200px;
+    height: 130px;
 }
 
 h1 {
@@ -37,18 +56,9 @@ p {
   width: 230px !important;
   height: 78px;
   float: none;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  z-index: 1;
 }
 
 .element img {
-  position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 180px;
-    height: 118px;
     z-index: 1;
 }
 
@@ -61,12 +71,13 @@ p {
   font-size: 13px !important;
   text-align: center !important;
   color: #a9a9a9;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .cardContainer {
-  position: fixed;
-  top: 18%;
+ /*  position: fixed;
+  top: 3%;
+  left: 30%; */
 }
 
 #card-container {
@@ -74,18 +85,27 @@ p {
   width: 50%;
   max-width: 100%;
   max-height: 100%;
-   
 }
 
 #card-title {
   position: absolute;
-  bottom: 13%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    font-family: 'mainFont', sans-serif;
-    font-weight: 700;
-    color: #0074c9;
-    font-size: 3.3rem;
+  bottom: 17%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: 'mainFont', sans-serif;
+  font-weight: 700;
+  color: #0074c9;
+  font-size: 1.5rem;
+}
+
+#card-message {
+  font-size: 13px;
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #0074c9;
+  font-family: 'mainFont', sans-serif;
 }
 
 input#title {
@@ -94,8 +114,8 @@ input#title {
 
 .form-container {
   margin: 0rem 8%;
-  position: relative;
-  top: -25px;
+  /* position: relative;
+  top: -25px; */
 
 }
 
@@ -110,16 +130,7 @@ form, input, textarea, select {
 }
 
 input:focus, textarea:focus, select:focus {
-  border-color: darkgreen !important;
 }
-
-
-button:hover {
-  background-color: #07A7E3;
-  color: white;
-  border: white;
-}
-
 
 .text-container {
   padding: 0 1rem 2rem 1rem;
@@ -140,6 +151,41 @@ img {
   margin: 0;
   float: right;
   object-fit: cover;
+}
+
+#save-button {
+ /*  border: none;
+  background: #0074c8;
+  color: #fff;
+  padding: 10px 60px; */
+  border: none;
+    background: #0074c8;
+    color: #fff;
+    padding: 10px 60px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    transition: all 0.3s;
+}
+
+#save-button:hover {
+  background-color: #07A7E3;
+  color: white;
+  border: white;
+}
+
+.formColumn {
+  position: relative;
+  top: -25px;
+
+}
+
+.form__ {
+  align-items: baseline;
+    justify-content: unset;
+    grid-row-gap: 10px;
+    width: 43.5555%;
+    margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
@@ -183,5 +229,34 @@ img {
   .element img {
     width: 200px;
     height: 134px;
+  }
+
+  .info_ p {
+    margin-top: 2rem;
+  }
+
+  body::after {
+    
+    width: 100px;
+    height: 67px;
+
+  }
+
+  .form__ {
+    width: 90.5555%;
+  }
+
+  #card-message {
+    font-size: 11px;
+  }
+
+  .info_ p:nth-child(2) {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 900px) {
+  body::after{
+    display: none;
   }
 }
