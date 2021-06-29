@@ -175,8 +175,6 @@ img {
 }
 
 .formColumn {
-  position: relative;
-  top: -25px;
 
 }
 
@@ -186,6 +184,12 @@ img {
     grid-row-gap: 10px;
     width: 43.5555%;
     margin: 0 auto;
+}
+
+.imgContainer {
+  max-width: 700px;
+  max-height: 700px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
