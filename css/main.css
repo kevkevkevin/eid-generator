@@ -134,7 +134,7 @@ input:focus, textarea:focus, select:focus {
 
 .text-container {
   /* padding: 0 1rem 2rem 1rem; */
-  padding: 0;
+  padding: 0 !important;
   max-height: 100%;
   overflow: hidden;
   /* word-wrap: break-word; */
