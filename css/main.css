@@ -226,8 +226,8 @@ img {
   }
 
   #card-title {
-    bottom: 18%;
-    font-size: 1.5rem;
+    bottom: 14%;
+    font-size: 1rem;
   }
 
   .element img {
@@ -252,7 +252,7 @@ img {
 
   #card-message {
     font-size: 11px;
-    bottom: 14%;
+    bottom: 10%;
   }
 
   .info_ p:nth-child(2) {
